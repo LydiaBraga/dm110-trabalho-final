@@ -13,6 +13,14 @@ public class DevicePollerIdentifier implements Serializable {
 	private String deviceIp;
 	private Timestamp time;
 	
+	public DevicePollerIdentifier() {
+	}
+
+	public DevicePollerIdentifier(String deviceIp, Timestamp time) {
+		this.deviceIp = deviceIp;
+		this.time = time;
+	}
+
 	public String getDeviceIp() {
 		return deviceIp;
 	}

@@ -11,7 +11,8 @@ public interface PollerService {
 
 	@GET
 	@Path("/start/{ip}/{mask}")
-	void startPoller(@PathParam("ip") String ip, @PathParam("mask") int mask);
+	@Produces(MediaType.TEXT_PLAIN)
+	String startPoller(@PathParam("ip") String ip, @PathParam("mask") int mask);
 	
 	@GET
 	@Path("/status/{ip}")

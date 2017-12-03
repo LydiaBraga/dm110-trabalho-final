@@ -11,6 +11,14 @@ public class DeviceStatus {
 	
 	private String deviceStatus;
 
+	public DeviceStatus() {
+	}
+
+	public DeviceStatus(DevicePollerIdentifier devicePollerIdentifier, String deviceStatus) {
+		this.devicePollerIdentifier = devicePollerIdentifier;
+		this.deviceStatus = deviceStatus;
+	}
+
 	public DevicePollerIdentifier getDevicePollerIdentifier() {
 		return devicePollerIdentifier;
 	}

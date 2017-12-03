@@ -1,0 +1,5 @@
+Nome do datasource: PollerDS
+JNDI do datasource: java:/PollerDS
+
+Nome da fila: DM110PollerQueue
+JNDI da fila: java:/jms/queue/pollerQueue
